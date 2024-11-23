@@ -8,6 +8,7 @@ CORS(app)
 # Configure MySQL connection
 db = mysql.connector.connect(
     host="sql12.freesqldatabase.com",
+    port=3306,
     user="sql12746980",
     password="HDrSwblqmu",
     database="sql12746980"
@@ -43,4 +44,4 @@ def login():
         }), 400
 
 if __name__ == '__main__':
-    app.run(debug=False, host='0.0.0.0')
+    app.run(debug=True, host='0.0.0.0')
